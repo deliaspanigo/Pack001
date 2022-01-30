@@ -31,5 +31,6 @@ ggbrush <- function(data = mtcars, xvar = "mpg", yvar = "disp") {
   }
 
  # runGadget(ui, server)
+
   runGadget(ui, server, viewer = browserViewer())
 }
