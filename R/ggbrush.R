@@ -1,5 +1,8 @@
 
-
+# library(shiny)
+# library(miniUI)
+# library(ggplot2)
+# https://shiny.rstudio.com/articles/gadgets.html
 
 ggbrush <- function(data = mtcars, xvar = "mpg", yvar = "disp") {
 
@@ -27,5 +30,6 @@ ggbrush <- function(data = mtcars, xvar = "mpg", yvar = "disp") {
     })
   }
 
-  runGadget(ui, server)
+ # runGadget(ui, server)
+  runGadget(ui, server, viewer = browserViewer())
 }
